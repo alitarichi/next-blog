@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ThemeToggle from "../themeToggle/ThemeToggle";
 import AuthLinks from "../authLinks/AuthLinks";
+
 const navbar = () => {
   return (
     <div className={styles.container}>
@@ -16,9 +17,15 @@ const navbar = () => {
       <div className={styles.logo}>Log Center</div>
       <div className={styles.links}>
         <ThemeToggle />
-        <Link href="/">Home</Link>
-        <Link href="/">Contact</Link>
-        <Link href="/">About</Link>
+        <Link href="/" className={styles.link}>
+          Home
+        </Link>
+        <Link href="/" className={styles.link}>
+          Contact
+        </Link>
+        <Link href="/" className={styles.link}>
+          About
+        </Link>
         <AuthLinks />
       </div>
     </div>
