@@ -4,4 +4,4 @@ const CategoryList = () => {
   return <div className={styles.container}>CategoryList</div>;
 };
 
-export default Footer;
+export default CategoryList;
