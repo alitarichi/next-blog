@@ -3,6 +3,7 @@ import styles from "./menu.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import MenuPosts from "../MenuPosts/MenuPosts";
+import MenuCategories from "../menuCategories/MenuCategories";
 const Menu = () => {
   return (
     <div className={styles.container}>
@@ -12,24 +13,7 @@ const Menu = () => {
       <div>
         <h2 className={styles.subtitle}>Discover by topic</h2>
         <h1 className={styles.detail}>Categories</h1>
-        <Link href="/" className={`${styles.categoryItem} ${styles.style}`}>
-          Style
-        </Link>
-        <Link href="/" className={`${styles.categoryItem} ${styles.culture}`}>
-          Culture
-        </Link>
-        <Link href="/" className={`${styles.categoryItem} ${styles.food}`}>
-          Food
-        </Link>
-        <Link href="/" className={`${styles.categoryItem} ${styles.fashion}`}>
-          Fashion
-        </Link>
-        <Link href="/" className={`${styles.categoryItem} ${styles.travel}`}>
-          Travel
-        </Link>
-        <Link href="/" className={`${styles.categoryItem} ${styles.coding}`}>
-          Coding
-        </Link>
+        <MenuCategories />
       </div>
 
       <h2 className={styles.subtitle}>Chosen by the editor</h2>
