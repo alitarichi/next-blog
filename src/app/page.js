@@ -1,5 +1,4 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./homepage.module.css";
 import Featured from "@/components/featured/Featured";
 import CategoryList from "@/components/categoryList/CategoryList";
 import CardList from "@/components/cardList/CardList";
@@ -10,7 +9,7 @@ export default function Home() {
     <main className={styles.container}>
       <Featured />
       <CategoryList />
-      <div className={styles.container}>
+      <div className={styles.content}>
         <CardList />
         <Menu />
       </div>
