@@ -1,7 +1,7 @@
-import React from "react";
+import styles from "./commnets.module.css";
 
 const Comments = () => {
-  return <div>Comments</div>;
+  return <div className={styles.container}>Comments</div>;
 };
 
 export default Comments;
