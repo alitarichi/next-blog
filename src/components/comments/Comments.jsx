@@ -33,7 +33,7 @@ const Comments = () => {
               <span className={styles.date}>10.03.2022</span>
             </div>
           </div>
-          <p className={styles.content}>
+          <p className={styles.desc}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
@@ -55,7 +55,7 @@ const Comments = () => {
               <span className={styles.date}>10.03.2022</span>
             </div>
           </div>
-          <p className={styles.content}>
+          <p className={styles.desc}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
@@ -77,7 +77,7 @@ const Comments = () => {
               <span className={styles.date}>10.03.2022</span>
             </div>
           </div>
-          <p className={styles.content}>
+          <p className={styles.desc}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
@@ -99,7 +99,7 @@ const Comments = () => {
               <span className={styles.date}>10.03.2022</span>
             </div>
           </div>
-          <p className={styles.content}>
+          <p className={styles.desc}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
