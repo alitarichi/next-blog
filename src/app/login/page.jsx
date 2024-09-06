@@ -14,7 +14,7 @@ const login = () => {
   }
 
   if (status === "authenticated") {
-    return router.push("/");
+    router.push("/");
   }
   return (
     <div className={styles.container}>
