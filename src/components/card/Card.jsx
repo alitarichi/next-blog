@@ -5,9 +5,11 @@ import Link from "next/link";
 const Card = ({ key, item }) => {
   return (
     <div className={styles.container} key={key}>
-      <div className={styles.imageContainer}>
-        <Image src="/p1.jpeg" alt="post" fill className={styles.image} />
-      </div>
+      {item.img && (
+        <div className={styles.imageContainer}>
+          <Image src={item.img} alt="post" fill className={styles.image} />
+        </div>
+      )}
       <div className={styles.textContainer}>
         <div className={styles.detail}>
           <span className={styles.date}>
@@ -15,16 +17,11 @@ const Card = ({ key, item }) => {
           </span>
           <span className={styles.category}>{item.catSlug}</span>
         </div>
-        <Link href="/">
+        <Link href={`/posts/${item.slug}`}>
           <h1>{item.title}</h1>
         </Link>
-        <p className={styles.desc}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum
-          purus eu mauris accumsan, ac pretium ligula sodales. Sed ac
-          sollicitudin sem. Aliquam luctus erat eget urna interdum lobortis.
-          Nulla facilisi. Nunc et risus metus. Pellentesque condimentum, est
-        </p>
-        <Link href="/" className={styles.link}>
+        <p className={styles.desc}>{item.desc.substring(0, 60)}</p>
+        <Link href={`/posts/${item.slug}`} className={styles.link}>
           Read More
         </Link>
       </div>
