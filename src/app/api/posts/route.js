@@ -30,3 +30,28 @@ export const GET = async (req) => {
     );
   }
 };
+
+//CREATE A POST
+export const POST = async (req) => {
+  const session = await getAuthSession();
+
+  if (!session) {
+    return new NextResponse(
+      JSON.stringify({ message: "no session available!" }, { status: 401 })
+    );
+  }
+
+  try {
+    const body = await req.json();
+    const post = await prisma.post.create({
+      data: { ...body, userEmail: session.user.email },
+    });
+
+    return new NextResponse(JSON.stringify(comment, { status: 200 }));
+  } catch (error) {
+    // console.log(error);
+    return new NextResponse(
+      JSON.stringify({ message: "something went wrong" }, { status: 500 })
+    );
+  }
+};
